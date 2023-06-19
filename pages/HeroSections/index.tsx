@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import heroImage from 'assets/images/heroImage.png';
 
 const HeroSections = () => {
@@ -18,14 +19,17 @@ const HeroSections = () => {
             Great With <br /> Food Program
           </h1>
           <p className="max-w-2xl mb-6 font-medium text-gray-500 lg:mb-8">
-            We will help you in this exciting adventure of nourishing your body, energizing your life, and embracing the joy of eating healthy. 
+            We will help you in this exciting adventure of nourishing your body,
+            energizing your life, and embracing the joy of eating healthy.
           </p>
-          <button
-            type="button"
-            className="animate-bounce text-white bg-red-500 hover:bg-red-600 focus:ring-4 focus:ring-red-500 font-medium rounded-lg px-10 py-3 mr-2 mb-2 focus:outline-none"
-          >
-            Start Now
-          </button>
+          <Link href="/recipe">
+            <button
+              type="button"
+              className="animate-bounce text-white bg-red-500 hover:bg-red-600 focus:ring-4 focus:ring-red-500 font-medium rounded-lg px-10 py-3 mr-2 mb-2 focus:outline-none"
+            >
+              Start Now
+            </button>
+          </Link>
         </div>
       </div>
       <div className="w-full lg:w-1/2 flex justify-end">

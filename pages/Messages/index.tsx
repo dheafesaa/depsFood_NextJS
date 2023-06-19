@@ -1,11 +1,12 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import messageImage from 'assets/images/messageImage.png';
 
 const Messages = () => {
   return (
     <section className="max-w-screen-xl mx-auto py-8 px-4">
-        <div className='w-full flex items-center px-4 lg:px-8 bg-red-500 rounded-lg shadow py-8 lg:py-0'>
+      <div className="w-full flex items-center px-4 lg:px-8 bg-red-500 rounded-lg shadow py-8 lg:py-0">
         <div className="flex flex-col w-full lg:w-3/5">
           <div className="w-full lg:max-w-3xl text-white">
             <h1 className="text-2xl md:text-4xl xl:text-5xl font-bold tracking-tight">
@@ -17,8 +18,8 @@ const Messages = () => {
               world of software development.{' '}
             </p>
           </div>
-          <a
-            href="#"
+          <Link
+            href="https://github.com/dheafesaa/depsFood_NextJS"
             className="max-full lg:max-w-xs inline-flex justify-center items-center p-2 text-base font-normal text-gray-500 rounded-lg bg-gray-50 hover:text-gray-900 hover:bg-gray-100"
           >
             <svg
@@ -47,10 +48,14 @@ const Messages = () => {
                 clip-rule="evenodd"
               ></path>
             </svg>
-          </a>
+          </Link>
         </div>
         <div className="hidden lg:w-2/5 lg:flex lg:justify-end">
-          <Image className="object-cover" src={messageImage} alt="Message Image" />
+          <Image
+            className="object-cover"
+            src={messageImage}
+            alt="Message Image"
+          />
         </div>
       </div>
     </section>

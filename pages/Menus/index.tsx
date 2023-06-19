@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import goals1 from 'assets/images/goals1.jpg';
 import fireIcon from 'assets/icons/fire.png';
 
@@ -83,12 +84,14 @@ const Menus = () => {
         </div>
       </div>
       <div className="flex justify-center mt-2">
-        <button
-          type="button"
-          className="text-red-500 hover:text-white border border-red-500 hover:bg-red-600 focus:ring-4 focus:outline-none focus:ring-red-500 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
-        >
-          View All
-        </button>
+        <Link href="/menu">
+          <button
+            type="button"
+            className="text-red-500 hover:text-white border border-red-500 hover:bg-red-600 focus:ring-4 focus:outline-none focus:ring-red-500 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+          >
+            View All
+          </button>
+        </Link>
       </div>
     </section>
   );
