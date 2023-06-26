@@ -14,18 +14,18 @@ const HeroSections = () => {
           >
             Healthy & Tasty Food
           </button>
-          <h1 className="max-w-2xl mb-4 text-5xl text-zinc-700 font-bold tracking-tight leading-none md:text-6xl xl:text-7xl dark:text-white">
+          <h1 className="max-w-2xl mb-4 text-5xl text-zinc-700 font-bold tracking-tight leading-none md:text-6xl xl:text-7xl">
             <span className="text-orange-400">Eat Healthy</span> And <br /> Feel
             Great With <br /> Food Program
           </h1>
-          <p className="max-w-2xl mb-6 font-medium text-gray-500 lg:mb-8">
+          <p className="max-w-xl mb-6 text-base font-medium text-zinc-500 lg:mb-8">
             We will help you in this exciting adventure of nourishing your body,
             energizing your life, and embracing the joy of eating healthy.
           </p>
           <Link href="/recipe">
             <button
               type="button"
-              className="animate-bounce text-white bg-red-500 hover:bg-red-600 focus:ring-4 focus:ring-red-500 font-medium rounded-lg px-10 py-3 mr-2 mb-2 focus:outline-none"
+              className="animate-bounce text-white bg-red-500 hover:bg-red-600 focus:ring-2 focus:ring-red-500 focus:outline-none font-medium rounded-lg px-10 py-3"
             >
               Start Now
             </button>
